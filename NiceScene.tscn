@@ -5,7 +5,8 @@
 [node name="NiceScene" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 192.07, 142.67 )
+position = Vector2( 99.4165, 152.47 )
+scale = Vector2( 7.54254, 1 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -32 )
 
