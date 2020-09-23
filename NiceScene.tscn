@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://pixel art resources/characters/epic animations/robot2.res" type="SpriteFrames" id=2]
 
 [node name="NiceScene" type="Node2D"]
 
@@ -20,3 +21,9 @@ position = Vector2( 311.789, 735.97 )
 scale = Vector2( 1, 7.95273 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -32 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 7000, 2832.66 )
+frames = ExtResource( 2 )
+frame = 2
+playing = true
