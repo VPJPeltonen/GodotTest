@@ -2,9 +2,19 @@ extends Node
 
 func get_price(building):
 	match building:
-		"tower 1":
+		"Archer Tower":
 			return 50
-		"tower 2":
+		"Fire Tower":
 			return 50
-		"tower 3":
+		"Slime Tower":
+			return 50
+		"Grave":
+			return 50
+		"Spikes":
+			return 50
+		"Bear Trap":
+			return 50
+		"Bomb":
+			return 50
+		"Ghost":
 			return 50

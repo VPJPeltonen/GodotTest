@@ -1,6 +1,7 @@
 extends KinematicBody
 
-var speed = 10
+export var slows = false
+var speed = 5
 var damage = 5
 var target 
 
@@ -17,4 +18,6 @@ func _on_LifeTimer_timeout():
 func _on_Area_body_entered(body):
 	if body.is_in_group("Enemy"):
 		body.damage(damage)
+		if slows:
+			body.Slow()
 		queue_free()

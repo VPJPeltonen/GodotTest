@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Fonts/Cool_dynamicfont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scripts/UI.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://UI/difficulty_buttongroup.tres" type="ButtonGroup" id=4]
 [ext_resource path="res://Fonts/Cool_small_dynamicfont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://UI/build_buttongroup.tres" type="ButtonGroup" id=6]
+[ext_resource path="res://UI/trap_buttongroup.tres" type="ButtonGroup" id=7]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.4, 0.4, 0, 1 )
@@ -89,62 +90,76 @@ custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color = Color( 0.898039, 0.898039, 0.898039, 1 )
 value = 20.0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="GameMode"]
-anchor_left = 0.5
+[node name="Buildings" type="VBoxContainer" parent="GameMode"]
 anchor_top = 1.0
-anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -170.0
-margin_top = -69.0
-margin_right = 170.0
+margin_top = -126.0
+margin_right = 388.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GameMode/Buildings"]
+margin_right = 388.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 1 )
+text = "Buildings"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GameMode/Buildings"]
+margin_top = 37.0
+margin_right = 388.0
+margin_bottom = 126.0
 custom_constants/separation = 48
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="GameMode/HBoxContainer"]
-margin_right = 80.0
-margin_bottom = 69.0
+[node name="VBoxContainer" type="VBoxContainer" parent="GameMode/Buildings/HBoxContainer"]
+margin_right = 62.0
+margin_bottom = 89.0
 
-[node name="Label" type="Label" parent="GameMode/HBoxContainer/VBoxContainer"]
-margin_right = 80.0
-margin_bottom = 17.0
+[node name="Label" type="Label" parent="GameMode/Buildings/HBoxContainer/VBoxContainer"]
+margin_right = 62.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 5 )
-text = "Tower 1"
+text = "Slime
+Tower"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Tower1Button" type="Button" parent="GameMode/HBoxContainer/VBoxContainer"]
-margin_top = 21.0
-margin_right = 80.0
-margin_bottom = 69.0
+[node name="Tower1Button" type="Button" parent="GameMode/Buildings/HBoxContainer/VBoxContainer"]
+margin_top = 41.0
+margin_right = 62.0
+margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 6 )
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="GameMode/HBoxContainer"]
-margin_left = 128.0
-margin_right = 210.0
-margin_bottom = 69.0
+[node name="VBoxContainer2" type="VBoxContainer" parent="GameMode/Buildings/HBoxContainer"]
+margin_left = 110.0
+margin_right = 177.0
+margin_bottom = 89.0
 alignment = 1
 
-[node name="Label" type="Label" parent="GameMode/HBoxContainer/VBoxContainer2"]
-margin_right = 82.0
-margin_bottom = 17.0
+[node name="Label" type="Label" parent="GameMode/Buildings/HBoxContainer/VBoxContainer2"]
+margin_right = 67.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 5 )
-text = "Tower 2"
+text = "Archer
+Tower"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Tower2Button" type="Button" parent="GameMode/HBoxContainer/VBoxContainer2"]
-margin_top = 21.0
-margin_right = 82.0
-margin_bottom = 69.0
+[node name="Tower2Button" type="Button" parent="GameMode/Buildings/HBoxContainer/VBoxContainer2"]
+margin_top = 41.0
+margin_right = 67.0
+margin_bottom = 89.0
 grow_horizontal = 2
 grow_vertical = 2
 rect_min_size = Vector2( 48, 48 )
@@ -152,28 +167,203 @@ size_flags_stretch_ratio = 0.0
 toggle_mode = true
 group = ExtResource( 6 )
 
-[node name="VBoxContainer3" type="VBoxContainer" parent="GameMode/HBoxContainer"]
-margin_left = 258.0
-margin_right = 340.0
-margin_bottom = 69.0
+[node name="VBoxContainer3" type="VBoxContainer" parent="GameMode/Buildings/HBoxContainer"]
+margin_left = 225.0
+margin_right = 287.0
+margin_bottom = 89.0
 
-[node name="Label" type="Label" parent="GameMode/HBoxContainer/VBoxContainer3"]
-margin_right = 82.0
-margin_bottom = 17.0
+[node name="Label" type="Label" parent="GameMode/Buildings/HBoxContainer/VBoxContainer3"]
+margin_right = 62.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 5 )
-text = "Tower 3"
+text = "Fire 
+Tower"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Tower3Button" type="Button" parent="GameMode/HBoxContainer/VBoxContainer3"]
-margin_top = 21.0
-margin_right = 82.0
-margin_bottom = 69.0
+[node name="Tower3Button" type="Button" parent="GameMode/Buildings/HBoxContainer/VBoxContainer3"]
+margin_top = 41.0
+margin_right = 62.0
+margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 6 )
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="GameMode/Buildings/HBoxContainer"]
+margin_left = 335.0
+margin_right = 388.0
+margin_bottom = 89.0
+
+[node name="Label" type="Label" parent="GameMode/Buildings/HBoxContainer/VBoxContainer4"]
+margin_right = 53.0
+margin_bottom = 37.0
+custom_fonts/font = ExtResource( 5 )
+text = "Grave
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tower3Button" type="Button" parent="GameMode/Buildings/HBoxContainer/VBoxContainer4"]
+margin_top = 41.0
+margin_right = 53.0
+margin_bottom = 89.0
+rect_min_size = Vector2( 48, 48 )
+toggle_mode = true
+group = ExtResource( 6 )
+
+[node name="Traps" type="VBoxContainer" parent="GameMode"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -370.0
+margin_top = -126.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GameMode/Traps"]
+margin_right = 370.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 1 )
+text = "Traps"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GameMode/Traps"]
+margin_top = 37.0
+margin_right = 370.0
+margin_bottom = 126.0
+custom_constants/separation = 48
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameMode/Traps/HBoxContainer"]
+margin_left = 7.0
+margin_right = 63.0
+margin_bottom = 89.0
+
+[node name="Label" type="Label" parent="GameMode/Traps/HBoxContainer/VBoxContainer"]
+margin_right = 56.0
+margin_bottom = 37.0
+custom_fonts/font = ExtResource( 5 )
+text = "Spikes
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trap1Button" type="Button" parent="GameMode/Traps/HBoxContainer/VBoxContainer"]
+margin_top = 41.0
+margin_right = 56.0
+margin_bottom = 89.0
+rect_min_size = Vector2( 48, 48 )
+toggle_mode = true
+group = ExtResource( 7 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GameMode/Traps/HBoxContainer"]
+margin_left = 111.0
+margin_right = 164.0
+margin_bottom = 89.0
+alignment = 1
+
+[node name="Label" type="Label" parent="GameMode/Traps/HBoxContainer/VBoxContainer2"]
+margin_right = 53.0
+margin_bottom = 37.0
+custom_fonts/font = ExtResource( 5 )
+text = "Bear 
+Trap"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trap2Button" type="Button" parent="GameMode/Traps/HBoxContainer/VBoxContainer2"]
+margin_top = 41.0
+margin_right = 53.0
+margin_bottom = 89.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 48, 48 )
+size_flags_stretch_ratio = 0.0
+toggle_mode = true
+group = ExtResource( 7 )
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="GameMode/Traps/HBoxContainer"]
+margin_left = 212.0
+margin_right = 261.0
+margin_bottom = 89.0
+
+[node name="Label" type="Label" parent="GameMode/Traps/HBoxContainer/VBoxContainer3"]
+margin_right = 49.0
+margin_bottom = 37.0
+custom_fonts/font = ExtResource( 5 )
+text = "Bomb
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trap3Button" type="Button" parent="GameMode/Traps/HBoxContainer/VBoxContainer3"]
+margin_top = 41.0
+margin_right = 49.0
+margin_bottom = 89.0
+rect_min_size = Vector2( 48, 48 )
+toggle_mode = true
+group = ExtResource( 7 )
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="GameMode/Traps/HBoxContainer"]
+margin_left = 309.0
+margin_right = 363.0
+margin_bottom = 89.0
+
+[node name="Label" type="Label" parent="GameMode/Traps/HBoxContainer/VBoxContainer4"]
+margin_right = 54.0
+margin_bottom = 37.0
+custom_fonts/font = ExtResource( 5 )
+text = "Ghost
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trap4Button" type="Button" parent="GameMode/Traps/HBoxContainer/VBoxContainer4"]
+margin_top = 41.0
+margin_right = 54.0
+margin_bottom = 89.0
+rect_min_size = Vector2( 48, 48 )
+toggle_mode = true
+group = ExtResource( 7 )
+
+[node name="RoundDisplay" type="Timer" parent="GameMode"]
+wait_time = 2.0
+one_shot = true
+
+[node name="RoundLabel" type="Label" parent="GameMode"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -140.5
+margin_top = -32.5
+margin_right = 140.5
+margin_bottom = 32.5
+custom_fonts/font = ExtResource( 3 )
+text = "Round 2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="WinScreen" type="Control" parent="."]
 visible = false
@@ -347,9 +537,15 @@ margin_right = 327.5
 margin_bottom = 65.0
 custom_fonts/font = ExtResource( 3 )
 text = "UNNAMED GAME"
-[connection signal="pressed" from="GameMode/HBoxContainer/VBoxContainer/Tower1Button" to="." method="_on_BuildmodeButton_pressed" binds= [ 0 ]]
-[connection signal="pressed" from="GameMode/HBoxContainer/VBoxContainer2/Tower2Button" to="." method="_on_BuildmodeButton_pressed" binds= [ 1 ]]
-[connection signal="pressed" from="GameMode/HBoxContainer/VBoxContainer3/Tower3Button" to="." method="_on_BuildmodeButton_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="GameMode/Buildings/HBoxContainer/VBoxContainer/Tower1Button" to="." method="_on_BuildmodeButton_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="GameMode/Buildings/HBoxContainer/VBoxContainer2/Tower2Button" to="." method="_on_BuildmodeButton_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="GameMode/Buildings/HBoxContainer/VBoxContainer3/Tower3Button" to="." method="_on_BuildmodeButton_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="GameMode/Buildings/HBoxContainer/VBoxContainer4/Tower3Button" to="." method="_on_BuildmodeButton_pressed" binds= [ 3 ]]
+[connection signal="pressed" from="GameMode/Traps/HBoxContainer/VBoxContainer/Trap1Button" to="." method="_on_TrapModeButton_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="GameMode/Traps/HBoxContainer/VBoxContainer2/Trap2Button" to="." method="_on_TrapModeButton_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="GameMode/Traps/HBoxContainer/VBoxContainer3/Trap3Button" to="." method="_on_TrapModeButton_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="GameMode/Traps/HBoxContainer/VBoxContainer4/Trap4Button" to="." method="_on_TrapModeButton_pressed" binds= [ 3 ]]
+[connection signal="timeout" from="GameMode/RoundDisplay" to="." method="_on_RoundDisplay_timeout"]
 [connection signal="pressed" from="StartingMenu/StartGameButton" to="." method="_on_StartGameButton_pressed"]
 [connection signal="pressed" from="StartingMenu/Difficulties/HBoxContainer/EasyBox" to="." method="_on_EasyBox_pressed"]
 [connection signal="pressed" from="StartingMenu/Difficulties/HBoxContainer/NormalBox" to="." method="_on_NormalBox_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Meshes/path_arraymesh.tres" type="ArrayMesh" id=1]
 [ext_resource path="res://Scenes/Enviroment.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Scenes/Enemies/Spawner.tscn" type="PackedScene" id=6]
 [ext_resource path="res://BaseEnviroment.tres" type="Environment" id=8]
 [ext_resource path="res://Scripts/Player/DamageZone.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/Buildings/BuildNodeGround.tscn" type="PackedScene" id=10]
 
 [sub_resource type="NavigationMesh" id=2]
 vertices = PoolVector3Array( -26.3933, 0.912986, -2.41417, -26.3933, 0.912986, -1.51417, -24.5933, 0.912986, -1.21417, -23.3933, 0.912986, -2.41417, 10.5067, 0.912986, -2.71417, 10.5067, 0.912986, -4.51417, 9.30667, 0.912986, -3.61417, 10.5067, 0.912986, -1.21417, 12.3067, 0.912986, -1.51417, 12.3067, 0.912986, -2.41417, 10.5067, 0.912986, -2.71417, -7.19333, 0.912986, -0.61417, -8.69333, 0.912986, -0.61417, -12.5933, 0.912986, 0.58583, -1.49333, 0.912986, -3.31417, -2.69333, 0.912986, -3.61417, -2.39333, 0.912986, -0.91417, -1.19333, 0.912986, -0.61417, 10.5067, 0.912986, -2.71417, 9.30667, 0.912986, -3.61417, 9.60667, 0.912986, -0.91417, 10.5067, 0.912986, -1.21417, -23.0933, 0.912986, 1.48583, -23.3933, 0.912986, -2.41417, -24.5933, 0.912986, -1.21417, -24.5933, 0.912986, 2.38583, -8.69333, 0.912986, -0.61417, -11.0933, 0.912986, -0.61417, -12.5933, 0.912986, 0.58583, -23.0933, 0.912986, 1.48583, -24.5933, 0.912986, 2.38583, -19.4933, 0.912986, 2.38583, -20.3933, 0.912986, 1.18583, -0.89333, 0.912986, -7.51417, -0.593328, 0.912986, -4.81417, 0.906672, 0.912986, -4.51417, 0.60667, 0.912986, -8.41417, -20.3933, 0.912986, 1.18583, -19.4933, 0.912986, 2.38583, -19.1933, 0.912986, -1.51417, -20.3933, 0.912986, -2.41417, -8.39333, 0.912986, -8.41417, -7.49333, 0.912986, -7.21417, -0.89333, 0.912986, -7.51417, 0.60667, 0.912986, -8.41417, -7.49333, 0.912986, -3.31417, -7.19333, 0.912986, -4.51417, -7.49333, 0.912986, -7.21417, -8.39333, 0.912986, -8.41417, -8.69333, 0.912986, -0.61417, -7.19333, 0.912986, -4.51417, -7.49333, 0.912986, -3.31417, -2.69333, 0.912986, -3.61417, -0.593328, 0.912986, -4.81417, 0.906672, 0.912986, -4.51417, -1.49333, 0.912986, -3.31417, 9.30667, 0.912986, -3.61417, 10.5067, 0.912986, -4.51417, -0.593328, 0.912986, -4.81417, -2.69333, 0.912986, -3.61417, -1.49333, 0.912986, -3.31417, 0.906672, 0.912986, -4.51417, -11.0933, 0.912986, -0.61417, -11.3933, 0.912986, -2.41417, -12.8933, 0.912986, -1.51417, -12.5933, 0.912986, 0.58583, -1.19333, 0.912986, 0.58583, 10.5067, 0.912986, 0.58583, 9.60667, 0.912986, -0.91417, -1.19333, 0.912986, -0.61417, -7.19333, 0.912986, -0.61417, -7.49333, 0.912986, -3.31417, -8.69333, 0.912986, -0.61417, -1.19333, 0.912986, -0.61417, -2.39333, 0.912986, -0.91417, -7.19333, 0.912986, -0.61417, -12.5933, 0.912986, 0.58583, -1.19333, 0.912986, 0.58583, -20.3933, 0.912986, -2.41417, -19.1933, 0.912986, -1.51417, -12.8933, 0.912986, -1.51417, -11.3933, 0.912986, -2.41417, 10.5067, 0.912986, 0.58583, 10.5067, 0.912986, -1.21417, 9.60667, 0.912986, -0.91417 )
@@ -53,7 +54,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.1726, 0.788044, -1.89776 )
 [node name="enviromont" parent="Map1/Enviroment" instance=ExtResource( 2 )]
 
 [node name="DamageZone" type="Area" parent="Map1/Enviroment"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4879, 0, -1.72012 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5187, 0, -1.71854 )
 script = ExtResource( 9 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Map1/Enviroment/DamageZone"]
@@ -61,7 +62,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0852718, 0.522083, -0.13919
 shape = SubResource( 9 )
 
 [node name="Camera" type="Camera" parent="Map1"]
-transform = Transform( -0.996649, 0, 0.081799, 0.0397618, 0.873908, 0.484462, -0.0714848, 0.486091, -0.870979, 0, 11.6536, -20.7626 )
+transform = Transform( -0.996649, 0, 0.081799, 0.0397618, 0.873908, 0.484462, -0.0714848, 0.486091, -0.870979, 0, 8.16114, -15.6581 )
 environment = ExtResource( 8 )
 script = ExtResource( 3 )
 
@@ -69,81 +70,86 @@ script = ExtResource( 3 )
 "UI",
 ] instance=ExtResource( 4 )]
 
-[node name="Towers" type="Spatial" parent="Map1"]
+[node name="Buildings" type="Spatial" parent="Map1"]
 
-[node name="BuildArea" type="Spatial" parent="Map1/Towers"]
+[node name="BuildAreaHigh" type="Spatial" parent="Map1/Buildings"]
 
-[node name="BuildNode" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9854, 1.14446, 1.99756 )
 
-[node name="BuildNode2" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode2" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00857878, 1.26501, -2.02594 )
 
-[node name="BuildNode3" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode3" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.98607, 0.955332, -8.00527 )
 
-[node name="BuildNode5" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode5" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0176268, 1.13015, 1.9881 )
 
-[node name="BuildNode4" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode4" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00004, 0.955332, -10.0645 )
 
-[node name="BuildNode6" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode6" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0376368, 0.955332, -10.0645 )
 
-[node name="BuildNode7" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode7" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.96634, 0.955332, -10.0645 )
 
-[node name="BuildNode8" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode8" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.97059, 0.955332, -10.0645 )
 
-[node name="BuildNode9" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode9" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.033, 0.955332, -10.0645 )
 
-[node name="BuildNode10" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode10" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.033, 0.955332, -7.97986 )
 
-[node name="BuildNode11" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode11" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.033, 1.00385, -4.02393 )
 
-[node name="BuildNode12" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode12" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9669, 1.00385, -4.02393 )
 
-[node name="BuildNode13" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode13" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9458, 0.802436, 1.94313 )
 
-[node name="BuildNode14" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode14" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.02, 0.802436, -0.0734305 )
 
-[node name="BuildNode15" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode15" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.02, 0.802436, -2.01308 )
 
-[node name="BuildNode16" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode16" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.02, 0.802436, -4.01565 )
 
-[node name="BuildNode17" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode17" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0469, 0.802436, -4.01565 )
 
-[node name="BuildNode18" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode18" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0469, 0.802436, -6.02536 )
 
-[node name="BuildNode19" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode19" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.043, 0.802436, -6.02536 )
 
-[node name="BuildNode20" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode20" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0639, 0.802436, -4.07135 )
 
-[node name="BuildNode21" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode21" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0639, 0.802436, -6.01881 )
 
-[node name="BuildNode22" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode22" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0211, 0.802436, -0.03268 )
 
-[node name="BuildNode23" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode23" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0211, 0.970861, -4.03685 )
 
-[node name="BuildNode24" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
+[node name="BuildNode24" parent="Map1/Buildings/BuildAreaHigh" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0211, 0.970861, -6.00649 )
+
+[node name="BuildAreaLow" type="Spatial" parent="Map1/Buildings"]
+
+[node name="BuildNode25" parent="Map1/Buildings/BuildAreaLow" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9854, 0.257943, 0.00775385 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="Map1"]
 transform = Transform( 1, 0, 0, 0, -0.614795, 0.788687, 0, -0.788687, -0.614795, 0, 13.7639, 0 )
@@ -151,4 +157,8 @@ visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Map1"]
 environment = ExtResource( 8 )
+
+[node name="OmniLight" type="OmniLight" parent="Map1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.89702, 3.39974, 0 )
+visible = false
 [connection signal="body_entered" from="Map1/Enviroment/DamageZone" to="Map1/Enviroment/DamageZone" method="_on_DamageZone_body_entered"]

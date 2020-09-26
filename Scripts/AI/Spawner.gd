@@ -3,7 +3,7 @@ extends Spatial
 export(Resource) var knight
 
 var rng = RandomNumberGenerator.new()
-var spawn_amount = 20
+var spawn_amount = 10
 
 func spawn():
 	if spawn_amount <= 0:
@@ -22,7 +22,9 @@ func spawn():
 		P.SetDifficulty()
 
 func StartGame():
+	$SpawnTimer.wait_time = 3.0 - (Game.current_round * 0.2)
 	$SpawnTimer.start()
+	spawn_amount = 5 + (Game.current_round * 5) 
 
 func GameOver():
 	$SpawnTimer.stop()
