@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="PlaneMesh" id=1]
+
+[sub_resource type="NavigationMesh" id=2]
+
+[node name="Game" type="Spatial"]
+
+[node name="Map1" type="Spatial" parent="."]
+
+[node name="Navigation" type="Navigation" parent="Map1"]
+
+[node name="MeshInstance" type="MeshInstance" parent="Map1/Navigation"]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="Map1/Navigation"]
+navmesh = SubResource( 2 )
