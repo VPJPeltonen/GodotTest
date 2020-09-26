@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Meshes/path_arraymesh.tres" type="ArrayMesh" id=1]
 [ext_resource path="res://Scenes/Enviroment.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Player/CameraController.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Buildings/BuildNode.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Enemies/Spawner.tscn" type="PackedScene" id=6]
@@ -62,6 +63,7 @@ shape = SubResource( 9 )
 [node name="Camera" type="Camera" parent="Map1"]
 transform = Transform( -0.996649, 0, 0.081799, 0.0397618, 0.873908, 0.484462, -0.0714848, 0.486091, -0.870979, 0, 11.6536, -20.7626 )
 environment = ExtResource( 8 )
+script = ExtResource( 3 )
 
 [node name="UI" parent="Map1/Camera" groups=[
 "UI",
