@@ -1,0 +1,213 @@
+{ "frames": [
+   {
+    "filename": "skelet 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet 1.aseprite",
+    "frame": { "x": 128, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet 2.aseprite",
+    "frame": { "x": 256, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet 3.aseprite",
+    "frame": { "x": 384, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet 4.aseprite",
+    "frame": { "x": 512, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet 5.aseprite",
+    "frame": { "x": 640, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet 6.aseprite",
+    "frame": { "x": 768, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 7.aseprite",
+    "frame": { "x": 896, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 8.aseprite",
+    "frame": { "x": 1024, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 9.aseprite",
+    "frame": { "x": 1152, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 10.aseprite",
+    "frame": { "x": 1280, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 11.aseprite",
+    "frame": { "x": 1408, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 12.aseprite",
+    "frame": { "x": 1536, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet 13.aseprite",
+    "frame": { "x": 1664, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 14.aseprite",
+    "frame": { "x": 1792, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 15.aseprite",
+    "frame": { "x": 1920, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet 16.aseprite",
+    "frame": { "x": 2048, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "skelet 17.aseprite",
+    "frame": { "x": 2176, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 125
+   },
+   {
+    "filename": "skelet 18.aseprite",
+    "frame": { "x": 2304, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet 19.aseprite",
+    "frame": { "x": 2432, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet 20.aseprite",
+    "frame": { "x": 2560, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "skelet 21.aseprite",
+    "frame": { "x": 2688, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.25-x64",
+  "image": "skelet.png",
+  "format": "RGBA8888",
+  "size": { "w": 2816, "h": 96 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "idle", "from": 0, "to": 4, "direction": "forward" },
+   { "name": "shoot", "from": 5, "to": 21, "direction": "forward" }
+  ]
+ }
+}
