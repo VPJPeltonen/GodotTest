@@ -1,5 +1,11 @@
 extends Control
 
+func _ready():
+	$GameMode.hide()
+	$WinScreen.hide()
+	$LoseScreen.hide()
+	$StartingMenu.show()
+
 func _process(delta):
 	$GameMode/Resource/Amount.text = str(Game.bones)
 	$GameMode/Health/HealthBar.value = Game.health
@@ -25,3 +31,12 @@ func _on_NormalBox_pressed():
 
 func _on_HardBox_pressed():
 	Game.difficulty = "hard"
+
+func _on_BuildmodeButton_pressed(num):
+	match num:
+		0:
+			Game.build_mode = "tower 1"
+		1:
+			Game.build_mode = "tower 2"
+		2:
+			Game.build_mode = "tower 3"

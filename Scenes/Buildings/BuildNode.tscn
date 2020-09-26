@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/Building/BuildNode.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Buildings/Tower.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Buildings/Tower2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Buildings/Tower3.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -11,6 +13,8 @@ points = PoolVector3Array( -1, 1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1,
 [node name="BuildNode" type="Area"]
 script = ExtResource( 1 )
 basic_tower = ExtResource( 2 )
+basic_tower_2 = ExtResource( 3 )
+basic_tower_3 = ExtResource( 4 )
 
 [node name="Highlight" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.2, 0, 0, 0, 1, 0, 0, 0 )

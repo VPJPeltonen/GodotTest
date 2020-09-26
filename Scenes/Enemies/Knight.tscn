@@ -34,6 +34,5 @@ transform = Transform( -20, 2.64009e-13, -3.01992e-06, 0, 20, 1.74846e-06, 3.019
 billboard = 1
 frames = ExtResource( 2 )
 animation = "walk"
-frame = 2
 playing = true
 [connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]

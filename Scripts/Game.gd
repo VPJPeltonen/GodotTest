@@ -4,6 +4,7 @@ var bones = 100
 var health = 100
 var difficulty = "normal"
 var spawns_left = true
+var build_mode = "none"
 
 func _process(delta):
 	if !spawns_left:
