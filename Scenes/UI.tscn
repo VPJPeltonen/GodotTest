@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Fonts/Cool_dynamicfont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scripts/UI.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Fonts/Cool_small_dynamicfont.tres" type="DynamicFont" id=5]
 [ext_resource path="res://UI/build_buttongroup.tres" type="ButtonGroup" id=6]
 [ext_resource path="res://UI/trap_buttongroup.tres" type="ButtonGroup" id=7]
+[ext_resource path="res://Scripts/UI/Button.gd" type="Script" id=8]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.4, 0.4, 0, 1 )
@@ -138,6 +139,7 @@ margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 6 )
+script = ExtResource( 8 )
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="GameMode/Buildings/HBoxContainer"]
 margin_left = 110.0
@@ -166,6 +168,7 @@ rect_min_size = Vector2( 48, 48 )
 size_flags_stretch_ratio = 0.0
 toggle_mode = true
 group = ExtResource( 6 )
+script = ExtResource( 8 )
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="GameMode/Buildings/HBoxContainer"]
 margin_left = 225.0
@@ -190,6 +193,7 @@ margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 6 )
+script = ExtResource( 8 )
 
 [node name="VBoxContainer4" type="VBoxContainer" parent="GameMode/Buildings/HBoxContainer"]
 margin_left = 335.0
@@ -214,6 +218,7 @@ margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 6 )
+script = ExtResource( 8 )
 
 [node name="Traps" type="VBoxContainer" parent="GameMode"]
 anchor_left = 1.0
@@ -266,6 +271,7 @@ margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="GameMode/Traps/HBoxContainer"]
 margin_left = 111.0
@@ -294,6 +300,7 @@ rect_min_size = Vector2( 48, 48 )
 size_flags_stretch_ratio = 0.0
 toggle_mode = true
 group = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="GameMode/Traps/HBoxContainer"]
 margin_left = 212.0
@@ -318,6 +325,7 @@ margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="VBoxContainer4" type="VBoxContainer" parent="GameMode/Traps/HBoxContainer"]
 margin_left = 309.0
@@ -342,6 +350,7 @@ margin_bottom = 89.0
 rect_min_size = Vector2( 48, 48 )
 toggle_mode = true
 group = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="RoundDisplay" type="Timer" parent="GameMode"]
 wait_time = 2.0

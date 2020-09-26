@@ -38,5 +38,9 @@ frame = 1
 playing = true
 
 [node name="SlowTimer" type="Timer" parent="."]
+
+[node name="DeathTimer" type="Timer" parent="."]
+one_shot = true
 [connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]
 [connection signal="timeout" from="SlowTimer" to="." method="_on_SlowTimer_timeout"]
+[connection signal="timeout" from="DeathTimer" to="." method="_on_DeathTimer_timeout"]

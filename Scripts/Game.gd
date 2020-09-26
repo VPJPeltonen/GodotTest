@@ -18,6 +18,9 @@ func _process(delta):
 			spawns_left = true
 
 func spend_bones(amount):
+	get_tree().call_group("Build Button", "reset_button")
+	build_mode = "none"
+	trap_mode = "none"
 	bones -= amount
 
 func gain_bones(amount):

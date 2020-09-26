@@ -24,6 +24,10 @@ config/icon="res://icon.png"
 Game="*res://Scripts/Game.gd"
 Prices="*res://Scripts/Data/Prices.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor_plugins]
 
 enabled=PoolStringArray( "AsepriteWizard" )

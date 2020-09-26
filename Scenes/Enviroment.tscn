@@ -1,10 +1,585 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Models/enviromont.glb" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Meshes/path_arraymesh.tres" type="ArrayMesh" id=2]
+[ext_resource path="res://Materials/autumn_spatialmaterial.tres" type="Material" id=3]
 
 [node name="enviromont" instance=ExtResource( 1 )]
+
+[node name="Cube" parent="." index="0"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube001" parent="." index="1"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube002" parent="." index="2"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube003" parent="." index="3"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube005" parent="." index="4"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane003" parent="." index="9"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane004" parent="." index="10"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane005" parent="." index="11"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane006" parent="." index="12"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane008" parent="." index="13"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane009" parent="." index="14"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane010" parent="." index="15"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane011" parent="." index="16"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane013" parent="." index="17"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube008" parent="." index="21"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube009" parent="." index="22"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube010" parent="." index="23"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube012" parent="." index="24"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane" parent="." index="25"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane001" parent="." index="26"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube013" parent="." index="27"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube014" parent="." index="28"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube017" parent="." index="29"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane002" parent="." index="30"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube020" parent="." index="31"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane014" parent="." index="32"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube015" parent="." index="33"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane015" parent="." index="34"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane017" parent="." index="36"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane018" parent="." index="37"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane016" parent="." index="38"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane019" parent="." index="39"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane021" parent="." index="40"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane022" parent="." index="41"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane023" parent="." index="42"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane025" parent="." index="43"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane027" parent="." index="44"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane028" parent="." index="45"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane024" parent="Armature002/Skeleton" index="0"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane026" parent="." index="47"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube018" parent="." index="48"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube019" parent="." index="49"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube004" parent="." index="50"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube006" parent="." index="51"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube024" parent="." index="52"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube025" parent="." index="53"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube029" parent="." index="54"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube007" parent="." index="55"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube030" parent="." index="56"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube031" parent="." index="57"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube032" parent="." index="58"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube034" parent="." index="59"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube035" parent="." index="60"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube036" parent="." index="61"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube038" parent="." index="62"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube039" parent="." index="63"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube040" parent="." index="64"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube041" parent="." index="65"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube042" parent="." index="66"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube043" parent="." index="67"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube044" parent="." index="68"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube045" parent="." index="69"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube046" parent="." index="70"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube037" parent="." index="71"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube047" parent="." index="72"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube049" parent="." index="73"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube051" parent="." index="74"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube052" parent="." index="75"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube050" parent="." index="76"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube053" parent="." index="77"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube054" parent="." index="78"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube056" parent="." index="79"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube055" parent="." index="80"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube057" parent="." index="81"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube058" parent="." index="82"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube059" parent="." index="83"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube060" parent="." index="84"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube011" parent="." index="85"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube016" parent="." index="86"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube063" parent="." index="87"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube066" parent="." index="88"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube067" parent="." index="89"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube068" parent="." index="90"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube069" parent="." index="91"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube071" parent="." index="92"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube074" parent="." index="93"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube027" parent="." index="94"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube075" parent="." index="95"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube028" parent="." index="96"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube048" parent="." index="97"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube062" parent="." index="98"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube064" parent="." index="99"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube065" parent="." index="100"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube072" parent="." index="101"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube079" parent="." index="102"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube070" parent="." index="103"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube073" parent="." index="104"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube076" parent="." index="105"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube077" parent="." index="106"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube080" parent="." index="107"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube081" parent="." index="108"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube082" parent="." index="109"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube083" parent="." index="110"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube084" parent="." index="111"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube085" parent="." index="112"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube087" parent="." index="113"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube093" parent="." index="114"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane040" parent="." index="115"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube094" parent="." index="116"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube095" parent="." index="117"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube096" parent="." index="118"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube097" parent="." index="119"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube098" parent="." index="120"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube092" parent="." index="121"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube099" parent="." index="122"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube100" parent="." index="123"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube101" parent="." index="124"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube102" parent="." index="125"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube021" parent="." index="126"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube022" parent="." index="127"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube033" parent="." index="128"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube026" parent="." index="129"]
+material/0 = ExtResource( 3 )
 
 [node name="Plane050" parent="." index="130"]
 visible = false
 mesh = ExtResource( 2 )
+material/0 = ExtResource( 3 )
+
+[node name="Plane051" parent="." index="131"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane061" parent="." index="132"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane033" parent="." index="134"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane030" parent="." index="135"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane032" parent="." index="136"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane034" parent="." index="137"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube103" parent="." index="138"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube104" parent="." index="139"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube105" parent="." index="140"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube106" parent="." index="141"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube108" parent="." index="142"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube109" parent="." index="143"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube110" parent="." index="144"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube112" parent="." index="145"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube113" parent="." index="146"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube114" parent="." index="147"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube115" parent="." index="148"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube116" parent="." index="149"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube117" parent="." index="150"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube118" parent="." index="151"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube119" parent="." index="152"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane042" parent="." index="153"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane043" parent="." index="154"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube107" parent="." index="155"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube111" parent="." index="156"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube120" parent="." index="157"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube121" parent="." index="158"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube122" parent="." index="159"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube123" parent="." index="160"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube124" parent="." index="161"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube125" parent="." index="162"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane012" parent="." index="164"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane029" parent="." index="165"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane031" parent="." index="166"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane035" parent="." index="167"]
+material/0 = ExtResource( 3 )
+
+[node name="Cone" parent="." index="168"]
+material/0 = ExtResource( 3 )
+
+[node name="Cone001" parent="." index="169"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube061" parent="." index="170"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube126" parent="." index="171"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane036" parent="." index="172"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane038" parent="." index="173"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane039" parent="." index="174"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane044" parent="." index="175"]
+material/0 = ExtResource( 3 )
+
+[node name="Cone002" parent="." index="176"]
+material/0 = ExtResource( 3 )
+
+[node name="Cone003" parent="." index="177"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube127" parent="." index="178"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube128" parent="." index="181"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube129" parent="." index="182"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube130" parent="." index="183"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube131" parent="." index="184"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube132" parent="." index="185"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube133" parent="." index="186"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube134" parent="." index="187"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube135" parent="." index="188"]
+material/0 = ExtResource( 3 )
+
+[node name="Cube136" parent="." index="189"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane054" parent="." index="202"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane055" parent="." index="203"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane056" parent="." index="204"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane060" parent="." index="205"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane063" parent="." index="206"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane064" parent="." index="207"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane065" parent="." index="208"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane067" parent="." index="209"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane057" parent="." index="210"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane058" parent="." index="211"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane059" parent="." index="212"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane062" parent="." index="213"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane072" parent="." index="214"]
+material/0 = ExtResource( 3 )
+
+[node name="Plane073" parent="." index="215"]
+material/0 = ExtResource( 3 )

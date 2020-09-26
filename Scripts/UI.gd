@@ -51,13 +51,13 @@ func _on_BuildmodeButton_pressed(num):
 func _on_TrapModeButton_pressed(num):
 	match num:
 		0:
-			Game.build_mode = "Spikes"
+			Game.trap_mode = "Spikes"
 		1:
-			Game.build_mode = "Bear Trap"
+			Game.trap_mode = "Bear Trap"
 		2:
-			Game.build_mode = "Bomb"
+			Game.trap_mode = "Bomb"
 		3:
-			Game.build_mode = "Ghost"
+			Game.trap_mode = "Ghost"
 
 
 func _on_RoundDisplay_timeout():

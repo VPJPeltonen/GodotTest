@@ -4,3 +4,5 @@
 background_mode = 1
 ambient_light_color = Color( 0.443137, 0.301961, 0.466667, 1 )
 ambient_light_sky_contribution = 0.0
+fog_depth_begin = 0.0
+fog_depth_end = 10.0

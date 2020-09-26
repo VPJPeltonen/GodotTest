@@ -48,4 +48,4 @@ func _on_BuildNode_mouse_exited():
 func _on_BuildNode_input_event(camera, event, click_position, click_normal, shape_idx):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT:
-			try_build(Game.build_mode)
+			try_build(Game.trap_mode)
