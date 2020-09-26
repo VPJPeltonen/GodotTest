@@ -23,7 +23,5 @@ texture = ExtResource( 1 )
 offset = Vector2( 0, -32 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 7000, 2832.66 )
 frames = ExtResource( 2 )
-frame = 2
-playing = true
+animation = "attack"
