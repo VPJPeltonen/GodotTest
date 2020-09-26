@@ -1,7 +1,7 @@
 extends KinematicBody
 
 export var speed = 2.0
-export var health = 10
+export var health = 15
 export var value = 20
 export var damage = 10
 var path = []
@@ -29,6 +29,14 @@ func damage(damage_done):
 		Game.gain_bones(value)
 		queue_free()
 
+func SetDifficulty():
+	match Game.difficulty:
+		"easy":
+			health = 10
+			damage = 5
+		"hard":
+			health = 25
+			damage = 20
 
 func _on_StartTimer_timeout():
 	move_to(get_parent().get_node("FinalTarget").global_transform.origin)

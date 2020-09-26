@@ -1,0 +1,264 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Fonts/Cool_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/UI.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/Cool_big_dynamicfont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://UI/difficulty_buttongroup.tres" type="ButtonGroup" id=4]
+[ext_resource path="res://Fonts/Cool_small_dynamicfont.tres" type="DynamicFont" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.4, 0.4, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.152941, 0.054902, 0.054902, 1 )
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameMode" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Resource" type="VBoxContainer" parent="GameMode"]
+anchor_left = 0.95
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.05
+margin_left = -127.0
+margin_bottom = 70.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="GameMode/Resource"]
+margin_right = 127.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.847059, 0.54902, 0.101961, 1 )
+text = "Bones"
+align = 2
+
+[node name="Amount" type="Label" parent="GameMode/Resource"]
+margin_top = 37.0
+margin_right = 127.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.847059, 0.54902, 0.101961, 1 )
+text = "10"
+align = 2
+
+[node name="Health" type="VBoxContainer" parent="GameMode"]
+anchor_left = 0.5
+anchor_top = 0.95
+anchor_right = 0.5
+anchor_bottom = 0.95
+margin_left = -130.5
+margin_top = -51.0
+margin_right = 130.5
+margin_bottom = 19.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="GameMode/Health"]
+margin_right = 261.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.4, 0.4, 0, 1 )
+text = "Health"
+align = 1
+
+[node name="HealthBar" type="ProgressBar" parent="GameMode/Health"]
+margin_top = 37.0
+margin_right = 261.0
+margin_bottom = 70.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.898039, 0.898039, 0.898039, 1 )
+value = 20.0
+
+[node name="WinScreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="WinScreen"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -139.5
+margin_top = -32.5
+margin_right = 139.5
+margin_bottom = 32.5
+custom_fonts/font = ExtResource( 3 )
+text = "Victory"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoseScreen" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="LoseScreen"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -139.5
+margin_top = -32.5
+margin_right = 139.5
+margin_bottom = 32.5
+custom_fonts/font = ExtResource( 3 )
+text = "You Lose"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartingMenu" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartGameButton" type="Button" parent="StartingMenu"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -61.5
+margin_top = -10.0
+margin_right = 61.5
+margin_bottom = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="StartingMenu/StartGameButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Start"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Difficulties" type="VBoxContainer" parent="StartingMenu"]
+anchor_left = 0.5
+anchor_top = 0.7
+anchor_right = 0.5
+anchor_bottom = 0.7
+margin_left = -91.5
+margin_top = -30.5
+margin_right = 91.5
+margin_bottom = 30.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="StartingMenu/Difficulties"]
+margin_right = 183.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 1 )
+text = "Difficulty"
+
+[node name="Label2" type="Label" parent="StartingMenu/Difficulties"]
+margin_top = 37.0
+margin_right = 183.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StartingMenu/Difficulties"]
+margin_top = 74.0
+margin_right = 183.0
+margin_bottom = 98.0
+alignment = 1
+
+[node name="Label2" type="Label" parent="StartingMenu/Difficulties/HBoxContainer"]
+margin_left = 5.0
+margin_top = 3.0
+margin_right = 50.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 5 )
+text = "Easy"
+
+[node name="EasyBox" type="CheckBox" parent="StartingMenu/Difficulties/HBoxContainer"]
+margin_left = 54.0
+margin_right = 78.0
+margin_bottom = 24.0
+group = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NormalBox" type="CheckBox" parent="StartingMenu/Difficulties/HBoxContainer"]
+margin_left = 82.0
+margin_right = 106.0
+margin_bottom = 24.0
+pressed = true
+group = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HardBox" type="CheckBox" parent="StartingMenu/Difficulties/HBoxContainer"]
+margin_left = 110.0
+margin_right = 134.0
+margin_bottom = 24.0
+group = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="StartingMenu/Difficulties/HBoxContainer"]
+margin_left = 138.0
+margin_top = 3.0
+margin_right = 178.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 5 )
+text = "Hard"
+
+[node name="Label3" type="Label" parent="StartingMenu/Difficulties"]
+margin_top = 102.0
+margin_right = 183.0
+margin_bottom = 119.0
+custom_fonts/font = ExtResource( 5 )
+text = "Normal"
+align = 1
+
+[node name="Label" type="Label" parent="StartingMenu"]
+anchor_left = 0.5
+anchor_top = 0.05
+anchor_right = 0.5
+anchor_bottom = 0.05
+margin_left = -327.5
+margin_right = 327.5
+margin_bottom = 65.0
+custom_fonts/font = ExtResource( 3 )
+text = "UNNAMED GAME"
+[connection signal="pressed" from="StartingMenu/StartGameButton" to="." method="_on_StartGameButton_pressed"]
+[connection signal="pressed" from="StartingMenu/Difficulties/HBoxContainer/EasyBox" to="." method="_on_EasyBox_pressed"]
+[connection signal="pressed" from="StartingMenu/Difficulties/HBoxContainer/NormalBox" to="." method="_on_NormalBox_pressed"]
+[connection signal="pressed" from="StartingMenu/Difficulties/HBoxContainer/HardBox" to="." method="_on_HardBox_pressed"]
