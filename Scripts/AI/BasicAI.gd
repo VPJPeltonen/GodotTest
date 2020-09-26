@@ -1,6 +1,7 @@
 extends KinematicBody
 
 export var speed = 2.0
+export var health = 10
 var path = []
 var state = "default"
 var current_target
@@ -20,6 +21,11 @@ func move_to(target):
 	path = nav.get_simple_path(global_transform.origin, target)
 	current_node = 0
 
+func damage(damage_done):
+	health -= damage_done
+	if health <= 0:
+		queue_free()
+
+
 func _on_StartTimer_timeout():
 	move_to(get_parent().get_node("FinalTarget").global_transform.origin)
-	print("trying")
