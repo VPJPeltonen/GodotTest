@@ -2,6 +2,8 @@ extends KinematicBody
 
 export var speed = 2.0
 export var health = 10
+export var value = 20
+export var damage = 10
 var path = []
 var state = "default"
 var current_target
@@ -24,6 +26,7 @@ func move_to(target):
 func damage(damage_done):
 	health -= damage_done
 	if health <= 0:
+		Game.gain_bones(value)
 		queue_free()
 
 

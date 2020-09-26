@@ -1,10 +1,14 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/Meshes/path_arraymesh.tres" type="ArrayMesh" id=1]
 [ext_resource path="res://Scenes/Enviroment.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Enemies/Knight.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fonts/Cool_dynamicfont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Scenes/Buildings/BuildNode.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scripts/AI/Spawner.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/UI.gd" type="Script" id=7]
+[ext_resource path="res://BaseEnviroment.tres" type="Environment" id=8]
+[ext_resource path="res://Scripts/Player/DamageZone.gd" type="Script" id=9]
 
 [sub_resource type="NavigationMesh" id=2]
 vertices = PoolVector3Array( -26.3933, 0.912986, -2.41417, -26.3933, 0.912986, -1.51417, -24.5933, 0.912986, -1.21417, -23.3933, 0.912986, -2.41417, 10.5067, 0.912986, -2.71417, 10.5067, 0.912986, -4.51417, 9.30667, 0.912986, -3.61417, 10.5067, 0.912986, -1.21417, 12.3067, 0.912986, -1.51417, 12.3067, 0.912986, -2.41417, 10.5067, 0.912986, -2.71417, -7.19333, 0.912986, -0.61417, -8.69333, 0.912986, -0.61417, -12.5933, 0.912986, 0.58583, -1.49333, 0.912986, -3.31417, -2.69333, 0.912986, -3.61417, -2.39333, 0.912986, -0.91417, -1.19333, 0.912986, -0.61417, 10.5067, 0.912986, -2.71417, 9.30667, 0.912986, -3.61417, 9.60667, 0.912986, -0.91417, 10.5067, 0.912986, -1.21417, -23.0933, 0.912986, 1.48583, -23.3933, 0.912986, -2.41417, -24.5933, 0.912986, -1.21417, -24.5933, 0.912986, 2.38583, -8.69333, 0.912986, -0.61417, -11.0933, 0.912986, -0.61417, -12.5933, 0.912986, 0.58583, -23.0933, 0.912986, 1.48583, -24.5933, 0.912986, 2.38583, -19.4933, 0.912986, 2.38583, -20.3933, 0.912986, 1.18583, -0.89333, 0.912986, -7.51417, -0.593328, 0.912986, -4.81417, 0.906672, 0.912986, -4.51417, 0.60667, 0.912986, -8.41417, -20.3933, 0.912986, 1.18583, -19.4933, 0.912986, 2.38583, -19.1933, 0.912986, -1.51417, -20.3933, 0.912986, -2.41417, -8.39333, 0.912986, -8.41417, -7.49333, 0.912986, -7.21417, -0.89333, 0.912986, -7.51417, 0.60667, 0.912986, -8.41417, -7.49333, 0.912986, -3.31417, -7.19333, 0.912986, -4.51417, -7.49333, 0.912986, -7.21417, -8.39333, 0.912986, -8.41417, -8.69333, 0.912986, -0.61417, -7.19333, 0.912986, -4.51417, -7.49333, 0.912986, -3.31417, -2.69333, 0.912986, -3.61417, -0.593328, 0.912986, -4.81417, 0.906672, 0.912986, -4.51417, -1.49333, 0.912986, -3.31417, 9.30667, 0.912986, -3.61417, 10.5067, 0.912986, -4.51417, -0.593328, 0.912986, -4.81417, -2.69333, 0.912986, -3.61417, -1.49333, 0.912986, -3.31417, 0.906672, 0.912986, -4.51417, -11.0933, 0.912986, -0.61417, -11.3933, 0.912986, -2.41417, -12.8933, 0.912986, -1.51417, -12.5933, 0.912986, 0.58583, -1.19333, 0.912986, 0.58583, 10.5067, 0.912986, 0.58583, 9.60667, 0.912986, -0.91417, -1.19333, 0.912986, -0.61417, -7.19333, 0.912986, -0.61417, -7.49333, 0.912986, -3.31417, -8.69333, 0.912986, -0.61417, -1.19333, 0.912986, -0.61417, -2.39333, 0.912986, -0.91417, -7.19333, 0.912986, -0.61417, -12.5933, 0.912986, 0.58583, -1.19333, 0.912986, 0.58583, -20.3933, 0.912986, -2.41417, -19.1933, 0.912986, -1.51417, -12.8933, 0.912986, -1.51417, -11.3933, 0.912986, -2.41417, 10.5067, 0.912986, 0.58583, 10.5067, 0.912986, -1.21417, 9.60667, 0.912986, -0.91417 )
@@ -15,6 +19,15 @@ albedo_color = Color( 1, 0, 0, 1 )
 
 [sub_resource type="ConvexPolygonShape" id=3]
 points = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, -1 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 1.64232, 1, 2.76781 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.4, 0.4, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.152941, 0.054902, 0.054902, 1 )
 
 [node name="Game" type="Spatial"]
 
@@ -56,8 +69,85 @@ autostart = true
 
 [node name="enviromont" parent="Map1/Enviroment" instance=ExtResource( 2 )]
 
+[node name="DamageZone" type="Area" parent="Map1/Enviroment"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4879, 0, -1.72012 )
+script = ExtResource( 9 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Map1/Enviroment/DamageZone"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0852718, 0.522083, -0.139193 )
+shape = SubResource( 9 )
+
 [node name="Camera" type="Camera" parent="Map1"]
 transform = Transform( -0.996649, 0, 0.081799, 0.0397618, 0.873908, 0.484462, -0.0714848, 0.486091, -0.870979, 0, 11.6536, -20.7626 )
+environment = ExtResource( 8 )
+
+[node name="UI" type="Control" parent="Map1/Camera"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resource" type="VBoxContainer" parent="Map1/Camera/UI"]
+anchor_left = 0.95
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.05
+margin_left = -127.0
+margin_bottom = 70.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Map1/Camera/UI/Resource"]
+margin_right = 127.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.847059, 0.54902, 0.101961, 1 )
+text = "Bones"
+align = 2
+
+[node name="Amount" type="Label" parent="Map1/Camera/UI/Resource"]
+margin_top = 37.0
+margin_right = 127.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.847059, 0.54902, 0.101961, 1 )
+text = "10"
+align = 2
+
+[node name="Health" type="VBoxContainer" parent="Map1/Camera/UI"]
+anchor_left = 0.5
+anchor_top = 0.95
+anchor_right = 0.5
+anchor_bottom = 0.95
+margin_left = -130.5
+margin_top = -51.0
+margin_right = 130.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="Map1/Camera/UI/Health"]
+margin_right = 261.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.4, 0.4, 0, 1 )
+text = "Health"
+align = 1
+
+[node name="HealthBar" type="ProgressBar" parent="Map1/Camera/UI/Health"]
+margin_top = 37.0
+margin_right = 261.0
+margin_bottom = 70.0
+custom_styles/fg = SubResource( 7 )
+custom_styles/bg = SubResource( 8 )
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.898039, 0.898039, 0.898039, 1 )
+value = 20.0
 
 [node name="Towers" type="Spatial" parent="Map1"]
 
@@ -77,4 +167,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.99967, 0.955332, 1.9881 )
 
 [node name="BuildNode4" parent="Map1/Towers/BuildArea" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.96573, 0.955332, -6.01697 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Map1"]
+transform = Transform( 1, 0, 0, 0, -0.614795, 0.788687, 0, -0.788687, -0.614795, 0, 13.7639, 0 )
+visible = false
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Map1"]
+environment = ExtResource( 8 )
 [connection signal="timeout" from="Map1/Navigation/Spawner/SpawnTimer" to="Map1/Navigation/Spawner" method="_on_SpawnTimer_timeout"]
+[connection signal="body_entered" from="Map1/Enviroment/DamageZone" to="Map1/Enviroment/DamageZone" method="_on_DamageZone_body_entered"]

@@ -17,16 +17,8 @@ func shoot():
 	print("shoot")
 	P.global_transform = global_transform
 	P.target = enemy_in_range
-	#P.look_at(transform.origin + velocity.normalized(), Vector3.UP)
-	
 	reloaded = false
 	$ReloadTimer.start()
-	
-	#P.scale = Vector3(0.1, 0.1, 0.1)
-	#P.BULLET_DAMAGE = 1
-	#P.connect("hit", self, "plant_hit")
-	#$GunCooldown.start()
-	#reloaded = false
 
 func _on_Area_body_entered(body):
 	if body.is_in_group("Enemy"):
