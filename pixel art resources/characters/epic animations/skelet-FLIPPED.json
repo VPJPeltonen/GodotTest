@@ -1,0 +1,213 @@
+{ "frames": [
+   {
+    "filename": "skelet-FLIPPED 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet-FLIPPED 1.aseprite",
+    "frame": { "x": 128, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet-FLIPPED 2.aseprite",
+    "frame": { "x": 256, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet-FLIPPED 3.aseprite",
+    "frame": { "x": 384, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet-FLIPPED 4.aseprite",
+    "frame": { "x": 512, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet-FLIPPED 5.aseprite",
+    "frame": { "x": 640, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet-FLIPPED 6.aseprite",
+    "frame": { "x": 768, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 7.aseprite",
+    "frame": { "x": 896, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 8.aseprite",
+    "frame": { "x": 1024, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 9.aseprite",
+    "frame": { "x": 1152, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 10.aseprite",
+    "frame": { "x": 1280, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 11.aseprite",
+    "frame": { "x": 1408, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 12.aseprite",
+    "frame": { "x": 1536, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet-FLIPPED 13.aseprite",
+    "frame": { "x": 1664, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 14.aseprite",
+    "frame": { "x": 1792, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 15.aseprite",
+    "frame": { "x": 1920, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 70
+   },
+   {
+    "filename": "skelet-FLIPPED 16.aseprite",
+    "frame": { "x": 2048, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "skelet-FLIPPED 17.aseprite",
+    "frame": { "x": 2176, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 125
+   },
+   {
+    "filename": "skelet-FLIPPED 18.aseprite",
+    "frame": { "x": 2304, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 150
+   },
+   {
+    "filename": "skelet-FLIPPED 19.aseprite",
+    "frame": { "x": 2432, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 200
+   },
+   {
+    "filename": "skelet-FLIPPED 20.aseprite",
+    "frame": { "x": 2560, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 100
+   },
+   {
+    "filename": "skelet-FLIPPED 21.aseprite",
+    "frame": { "x": 2688, "y": 0, "w": 128, "h": 96 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 96 },
+    "sourceSize": { "w": 128, "h": 96 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.25-x64",
+  "image": "skelet-FLIPPED.png",
+  "format": "RGBA8888",
+  "size": { "w": 2816, "h": 96 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "idle", "from": 0, "to": 4, "direction": "forward" },
+   { "name": "shoot", "from": 5, "to": 21, "direction": "forward" }
+  ]
+ }
+}
